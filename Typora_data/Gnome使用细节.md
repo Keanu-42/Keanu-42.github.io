@@ -7,12 +7,13 @@
 - [科学上网](#a5)
 	- [插件管理](#a5-b1)
 - [耳机问题](#a6)
-- [软件安装](#a7)
+- [JAVA环境配置](#a7)
 	- [JDK 11](#a7-b1)
 		- [JRE](#a7-b1-c1)
-	- [Android Studio](#a7-b2)
-		- [镜像列表及使用方法](#a7-b2-c1)
-	- [VS Code](#a7-b3) 
+- [Android Studio](#a8)
+	- [镜像列表及使用方法](#a8-b1)
+- [VS Code](#a9) 
+- [Adobe在Linux中的替代品](#a10)
 
 ----
 
@@ -149,7 +150,7 @@ None,      Thumb2,  Alt_L|Right
 - echo "options snd-intel-dspcfg dsp_driver=1" > /etc/modprobe.d/alsa.conf
 ```
 
-## <span id=a7>软件安装</span>
+## <span id=a7>JAVA环境配置</span>
 
 ### <span id=a7-b1>JDK 11</span>
 
@@ -190,7 +191,7 @@ bin/jlink --module-path jmods --add-modules java.desktop --output jre
 
 > 出处：https://blog.csdn.net/y_qc_lookup/article/details/99948136
 
-### <span id=a7-b2>Android Studio</span>
+## <span id=a8>Android Studio</span>
 
 AS可以直接从Arch的仓库中下载安装，十分方便。
 
@@ -198,7 +199,7 @@ AS可以直接从Arch的仓库中下载安装，十分方便。
 
 安装好后，我们在使用AS时遇到的最大问题就是SDK，AVD，以及gradle。但是，这些问题都是可以通过科学上网直接解决的，或者使用国内镜像代理。
 
-#### <span id=a7-b2-c1>镜像列表及使用方法</span>
+### <span id=a8-b1>镜像列表及使用方法</span>
 
 
 - 镜像列表
@@ -239,7 +240,7 @@ AS可以直接从Arch的仓库中下载安装，十分方便。
 
 > 出处：https://www.cnblogs.com/pingxin/p/p00078.html
 
-### <span id=a7-b3>VS Code</span>
+## <span id=a9>VS Code</span>
 
 最开始我并不知道Arch的仓库中有[VS Code](https://aur.archlinux.org/packages/visual-studio-code-bin)，我是根据网上的这篇[帖子](https://www.cnblogs.com/kwinwei/p/13202174.html)完成安装，虽然有点多此一举，但是也给其它Linux发行版提供了参考，下面是安装流程：
 
@@ -272,6 +273,37 @@ MimeType=text/plain;
 保存后退出，我们在应用菜单里就可以看到VS Code了。打开VS Code，加载插件：vscode-icons。
 
 ![插件](https://cdn.jsdelivr.net/gh/Keanu-42/Keanu-42.github.io@v1.1.3/Gnome使用细节/软件安装/icons.png)
+
+## <span id=a10>Adobe在Linux中的替代品</span>
+
+Photoshop
+- GIMP: https://www.gimp.org/
+- Krita: https://krita.org/en/
+- Photopea: https://www.photopea.com/
+
+Lightroom
+- Darktable: https://www.darktable.org/
+- RawTherapee: https://rawtherapee.com/
+
+Illustrator
+- Inkscape: https://inkscape.org/
+- Vectr: https://vectr.com/
+
+InDesign
+- Scribus: https://www.scribus.net/
+- Lucidoress: https://www.lucidpress.com/pages/
+
+Premiere Pro
+- Blender: https://www.blender.org/
+
+After Effects
+- Natron: https://natrongithub.github.io/
+
+Audition
+- Audacity: https://www.audacityteam.org/
+
+Dreamweaver
+- BlueGriffon: http://bluegriffon.org/
 
 ----
 
