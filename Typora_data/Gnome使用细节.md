@@ -14,6 +14,8 @@
 	- [镜像列表及使用方法](#a8-b1)
 - [VS Code](#a9) 
 - [Adobe在Linux中的替代品](#a10)
+- [DaVinci-Resolve](#a11)
+	- [Linux查看GPU信息和使用情况](#a11-b1)
 
 ----
 
@@ -181,7 +183,7 @@ export PATH=$PATH:${JAVA_PATH}
 
 jdk9以后的版本不再自动生成jre，这时我们需要手动生成。如果java目录中没有jre，那么上面环境变量中的jre并不会生效。接下来的操作很简单，我们在终端进入到`/usr/java/XXX`，然后执行以下指令：
 
-```
+```markdown
 bin/jlink --module-path jmods --add-modules java.desktop --output jre
 ```
 
@@ -204,28 +206,52 @@ AS可以直接从Arch的仓库中下载安装，十分方便。
 
 - 镜像列表
 
-    <details><summary>南阳理工学院镜像服务器地址：</summary>
-		- mirror.nyist.edu.cn 端口:80</details>
+    <details>
+     <summary>南阳理工学院镜像服务器地址：</summary>
+     <ul>
+      <li>mirror.nyist.edu.cn 端口:80</il>
+     </ul>
+    </details>
 
-    <details><summary>中国科学院开源协会镜像站地址：</summary>
-		- IPV4/IPV6: mirrors.opencas.cn 端口:80
-		- IPV4/IPV6: mirrors.opencas.org 端口:80
-		- IPV4/IPV6: mirrors.opencas.ac.cn 端口:80</details>
+    <details>
+     <summary>中国科学院开源协会镜像站地址：</summary>
+     <ul>
+      <li>IPV4/IPV6: mirrors.opencas.cn 端口:80</li>
+      <li>IPV4/IPV6: mirrors.opencas.org 端口:80</li>
+      <li>IPV4/IPV6: mirrors.opencas.ac.cn 端口:80</li>
+     </ul>
+    </details>
 
-    <details><summary>上海GDG镜像服务器地址：</summary>
-		- IPV4/IPV6: mirrors.opencas.ac.cn 端口:80</details>
+    <details>
+     <summary>上海GDG镜像服务器地址：</summary>
+     <ul>
+      <li>IPV4/IPV6: mirrors.opencas.ac.cn 端口:80</li>
+     </ul>
+    </details>
 
-    <details><summary>北京化工大学镜像服务器地址：</summary>
-		- IPv4: ubuntu.buct.edu.cn/ 端口:80
-		- IPv4: ubuntu.buct.cn/ 端口:80
-		- IPv6: ubuntu.buct6.edu.cn/ 端口:80</details>
+    <details>
+     <summary>北京化工大学镜像服务器地址：</summary>
+     <ul>
+      <li>IPv4: ubuntu.buct.edu.cn/ 端口:80</li>
+      <li>IPv4: ubuntu.buct.cn/ 端口:80</li>
+      <li>IPv6: ubuntu.buct6.edu.cn/ 端口:80</li>
+     </ul>
+    </details>
 
-    <details><summary>大连东软信息学院镜像服务器地址：</summary>
-		- mirrors.neusoft.edu.cn 端口:80</details>
+    <details>
+     <summary>大连东软信息学院镜像服务器地址：</summary>
+     <ul>
+      <li>mirrors.neusoft.edu.cn 端口:80</li>
+     </ul>
+    </details>
 
-    <details><summary>腾讯Bugly镜像：</summary>
-		- android-mirror.bugly.qq.com 端口:8080
-		- [腾讯镜像使用方法](http://android-mirror.bugly.qq.com:8080/include/usage.html)</details>
+    <details>
+     <summary>腾讯Bugly镜像：</summary>
+     <ul>
+      <li>android-mirror.bugly.qq.com 端口:8080</li>
+      <li>腾讯镜像使用方法：http://android-mirror.bugly.qq.com:8080/include/usage.html</li>
+     </ul>
+    </details>
 
 
 - 使用方法
@@ -252,13 +278,13 @@ AS可以直接从Arch的仓库中下载安装，十分方便。
 
 在程序根目录下，我们可以在`/resources/app/resources/linux/`这个路径中找到VS的图标“code.png”，然后把这个图标复制到`/usr/share/icons`目录下，由于在文件夹中无法直接执行这一操作，所以我们在终端中用以下指令：
 
-```
+```markdown
 sudo cp /usr/vs_code/VSCode-linux-x64/resources/app/resources/linux/code.png /usr/share/icons/
 ```
 
 最后我们就可以在`/usr/share/applications/`目录下创建VS的快捷方式。在终端中，用编辑器创建`/usr/share/applications/VSCode.desktop`，然后在文本框中输入以下内容：
 
-```
+```markdown
 [Desktop Entry]
 Name=Visual Studio Code
 Comment=Multi-platform code editor for Linux
@@ -305,6 +331,200 @@ Audition
 Dreamweaver
 - BlueGriffon: http://bluegriffon.org/
 
+## <span id=a10>DaVinci-Resolve</span>
+
+> 让DaVinci-Resolve在Manjaro中跑起来 (abandoned)
+
+今天打算在电脑上装达芬奇，原本是已经有了一个Kdenlive，但是我在看了油管博主@TechHut的视频[[Why I Switched To Resolve from Kdenlive - Best Video Editor on Linux?](https://youtu.be/O1ly_hp3Y-M)]后，对达芬奇产生了浓厚的兴趣，所以就有了后面的一系列操作，视频中其实也提到了从安装到使用的这整个过程并不是很顺利（伏笔）。
+
+老样子，我们还是先去[官网](https://www.blackmagicdesign.com/products/davinciresolve/#)下载镜像文件（~~app store也有，放在最后尝试~~），软件我们选择davinci-resolve 16，下载时选择Linux版本，这时会弹出来一个登记表，随便填一下，点击右下角注册并下载。
+
+![davinci_website]()
+
+压缩包下载好后，里面分别是安装指导PDF和安装程序，注意，安装程序是`.run`后缀。文件提取出来后不要急着点击安装，我们还需要把DaVinci所需的各种依赖包装上。当然，你也可以先安装，安装好后再检查所缺文件。安装界面和win差不多，一直next就完事[doge]。
+
+![安装界面]()
+
+DaVinci安装好后，这时一般无法直接启动，因为还缺少依赖，所以接下来我们要检查到底缺哪些东西。
+
+安装目录一般默认是`opt/resolve/`，而程序就在bin文件夹里。我们可以先试试命令`./resolve`启动DaVinci，结果报错，提示如下：
+
+```markdown
+error while loading shared libraries: libOpenCL.so.1: cannot open shared object file: No such file or directory
+```
+
+通过提示可以明显看出是缺少依赖的，如果想要知道得更清楚，可以使用`ldd resolve`来检查。
+这时你就会看到一长串依赖目录，注意每一行的`=>`符号，如果缺少依赖则右边会显示`not found`，正常情况和下面一样：
+
+```markdown
+linux-vdso.so.1 (0x00007ffd23fce000)
+	libc++.so.1 => /opt/resolve/bin/./../libs/libc++.so.1 (0x00007f6b2d736000)
+	libc++abi.so.1 => /opt/resolve/bin/./../libs/libc++abi.so.1 (0x00007f6b2d507000)
+	libcudart.so.11.0 => /opt/resolve/bin/./../libs/libcudart.so.11.0 (0x00007f6b2d289000)
+	libcublas.so.11 => /opt/resolve/bin/./../libs/libcublas.so.11 (0x00007f6b27437000)
+	libnvrtc.so.11.0 => /opt/resolve/bin/./../libs/libnvrtc.so.11.0 (0x00007f6b25c4c000)
+	libQt5Concurrent.so.5 => /opt/resolve/bin/./../libs/libQt5Concurrent.so.5 (0x00007f6b25c46000)
+	libQt5Core.so.5 => /opt/resolve/bin/./../libs/libQt5Core.so.5 (0x00007f6b25666000)
+	libQt5Gui.so.5 => /opt/resolve/bin/./../libs/libQt5Gui.so.5 (0x00007f6b250ec000)
+	libQt5Multimedia.so.5 => /opt/resolve/bin/./../libs/libQt5Multimedia.so.5 (0x00007f6b25008000)
+	libQt5Network.so.5 => /opt/resolve/bin/./../libs/libQt5Network.so.5 (0x00007f6b24eb5000)
+	libQt5OpenGL.so.5 => /opt/resolve/bin/./../libs/libQt5OpenGL.so.5 (0x00007f6b24e50000)
+	libQt5Sql.so.5 => /opt/resolve/bin/./../libs/libQt5Sql.so.5 (0x00007f6b24d09000)
+	libQt5Svg.so.5 => /opt/resolve/bin/./../libs/libQt5Svg.so.5 (0x00007f6b24cb0000)
+	libQt5Widgets.so.5 => /opt/resolve/bin/./../libs/libQt5Widgets.so.5 (0x00007f6b24632000)
+	libQt5Xml.so.5 => /opt/resolve/bin/./../libs/libQt5Xml.so.5 (0x00007f6b245e9000)
+	libQt5XmlPatterns.so.5 => /opt/resolve/bin/./../libs/libQt5XmlPatterns.so.5 (0x00007f6b24155000)
+```
+
+那么现在我们就开始安装依赖包，总共需要安装以下这几类文件：
+> 详情请参考B站视频「[好跪好我不是Tim...](https://www.bilibili.com/video/BV1pT4y157CS?share_source=copy_web)」
+
+### ssl
+
+- Arch
+	- openssl
+	- openssl-1.0
+	- lib32-openssl
+- Debian / Ubuntu / etc
+	- libssl-1.0
+
+### ocl-icd
+
+- Arch
+	- lib32-ocl-icd
+	- ocl-icd
+- Debian / Ubuntu / etc
+	- ocl-icd-opencl-dev
+
+### cuda
+
+> 不一定会用上
+
+- Arch
+	- cuda
+- Debian
+	- nvidia-cuda-dev
+
+### opencl
+
+- Arch
+	- NVIDIA
+		- opencl-headers
+		- opencl-nvidia
+		- lib32-opencl-nvidia
+	- AMD / Intel核显
+		- lib32-opencl-mesa
+		- opencl-headers
+		- opencl-mesa
+- Debian / Ubuntu / etc
+	- nvidia-opencl-icd
+
+### fuseiso
+
+因为安装程序是`.run`文件，所以需要fuseiso把它内部的镜像文件挂载成一个虚拟文件系统，从里面拷贝文件，否则因挂载失败而导致安装失败（我用的Manjaro不需要），最后记得重启。
+> fuseiso是用于arch，其它发行版就需要另外查找
+
+到这里就可以正常启动 / 安装。如果在启动过程中遇到了问题，那么可以查看运行日志，位置就在`opt/resolve/logs/`，在log中我们可以看到有两个error，我个人猜测问题还是出在显卡或驱动上。
+
+```markdown
+| ERROR | 2021-08-21 13:22:11,602 | Failed to connect to panel socket
+| ERROR | 2021-08-21 13:22:11,602 | DRIVER: open /var/tmp/davinci_socket failed
+```
+
+但是前面我已经把各种需要的或不需要的驱动都装上了，而我的笔记本是IU + N卡，那么问题可能在于显卡运行模式（DaVinci对显卡这方面很挑剔）。后面我了解到`optimus-manager`可以控制并切换显卡的运行模式，下载这个软件时，还得再下载一个`optimus-manager-qt`，然后重启电脑。
+> 详情请参考B站视频「[超简单Linux双显卡...](https://www.bilibili.com/video/BV1vK4y187Ww?share_source=copy_web)」
+
+当我从终端启动optimus-manager时，结果又报错，看到提示我真的是“黑人问号？？”
+
+![optimus-manager]()
+
+提示的第三行说道“If your login manager is GDM, make sure to follow those instructions”，我一看到这个GDM就知道事情不简单，下面提供的[解决方案](https://github.com/Askannz/optimus-manager#important--gnome-and-gdm-users)我点进去一看，GDM指的是“Gnome Display Manager”，然后下面给了两条解决措施，一是替换**gdm**为**gdm-prime**；二是optimus-manager与我的wayland窗口系统不兼容，还得修改`/etc/gdm/custom.conf`，把`#WaylandEnable=false`里的注释取消。
+
+![GDM]()
+
+但是在这里我犹豫了，先不说这样做对系统的稳定性会不会产生影响，关键是我也不清楚我的方向是否正确。所以我先暂时放下这个，想去看看独显的运作情况。
+
+### [Linux查看GPU信息和使用情况](https://www.cnblogs.com/yuehouse/p/10242942.html)
+
+1. 查看核显
+
+	`lspci | grep -i vga`
+	
+	```markdown
+	00:02.0 VGA compatible controller: Intel Corporation WhiskeyLake-U GT2 [UHD Graphics 620]
+	```
+
+	上面的`00:02.0`就是核显的代号，利用这个代号输入`lspci -v -s 00:02.0`
+	
+	<details open>
+	 <summary>核显信息</summary>
+	 <dl>
+	  <dt>00:02.0 VGA compatible controller: Intel Corporation WhiskeyLake-U GT2 [UHD Graphics 620] (prog-if 00 [VGA controller])</dt>
+	  <dd>DeviceName: Onboard - Video</dd>
+	  <dd>Subsystem: Intel Corporation Device 2112</dd>
+	  <dd>Flags: bus master, fast devsel, latency 0, IRQ 127</dd>
+	  <dd>Memory at 6012000000 (64-bit, non-prefetchable) [size=16M]</dd>
+	  <dd>Memory at 4000000000 (64-bit, prefetchable) [size=256M]</dd>
+	  <dd>I/O ports at 5000 [size=64]</dd>
+	  <dd>Expansion ROM at 000c0000 [virtual] [disabled] [size=128K]</dd>
+	  <dd>Capabilities: access denied </dd>
+	  <dd>Kernel driver in use: i915</dd>
+	  <dd>Kernel modules: i915</dd>
+	 </dl>
+	</details>
+
+2. 查看独显
+
+	`lspci | grep -i -nvidia`
+	
+	```markdown
+	01:00.0 3D controller: NVIDIA Corporation GP108M [GeForce MX250] (rev a1)
+	```
+	
+	上面的`01:00.0`就是独显的代号，利用这个代号输入`lspci -v -s 01:00.0`
+	
+	<details open>
+	 <summary>独显信息</summary>
+	 <dl>
+	  <dt>01:00.0 3D controller: NVIDIA Corporation GP108M [GeForce MX250] (rev a1)</dt>
+	  <dd>Subsystem: Device 1b50:5515</dd>
+	  <dd>Flags: bus master, fast devsel, latency 0, IRQ 137</dd>
+	  <dd>Memory at 80000000 (32-bit, non-prefetchable) [size=16M]</dd>
+	  <dd>Memory at 6000000000 (64-bit, prefetchable) [size=256M]</dd>
+	  <dd>Memory at 6010000000 (64-bit, prefetchable) [size=32M]</dd>
+	  <dd>I/O ports at 4000 [size=128]</dd>
+	  <dd>Expansion ROM at 81000000 [virtual] [disabled] [size=512K]</dd>
+	  <dd>Capabilities: access denied</dd>
+	  <dd>Kernel driver in use: nvidia</dd>
+	  <dd>Kernel modules: nouveau, nvidia_drm, nvidia</dd>
+	 </dl>
+	</details>
+
+3. 利用`nvidia-smi`查看独显
+
+	```markdown
+	+-----------------------------------------------------------------------------+
+	| NVIDIA-SMI 470.63.01    Driver Version: 470.63.01    CUDA Version: 11.4     |
+	|-------------------------------+----------------------+----------------------+
+	| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+	| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+	|                               |                      |               MIG M. |
+	|===============================+======================+======================|
+	|   0  NVIDIA GeForce ...  Off  | 00000000:01:00.0 Off |                  N/A |
+	| N/A   42C    P8    N/A /  N/A |      4MiB /  2002MiB |      0%      Default |
+	|                               |                      |                  N/A |
+	+-------------------------------+----------------------+----------------------+
+	| Processes:                                                                  |
+	|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+	|        ID   ID                                                   Usage      |
+	|=============================================================================|
+	|    0   N/A  N/A      1320      G   /usr/lib/Xorg                       4MiB |
+	+-----------------------------------------------------------------------------+
+	```
+	
+	看到这个后我迷惑了，这独显有在工作吗？
+	行吧，不想折腾了，app-store我也试过了，无法下载，解决方法应该是把之前下好的压缩包放在一个下载目录，但是这样做也没什么意义（虽然我也没找到），最后还是会回到启动报错的问题。
+	Kdenlive又不是不能用。
 ----
 
 > 后续若有其它内容，我再一一补充 ^_^ 。
