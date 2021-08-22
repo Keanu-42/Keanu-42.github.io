@@ -339,11 +339,12 @@ Dreamweaver
 
 老样子，我们还是先去[官网](https://www.blackmagicdesign.com/products/davinciresolve/#)下载镜像文件（~~app store也有，放在最后尝试~~），软件我们选择davinci-resolve 16，下载时选择Linux版本，这时会弹出来一个登记表，随便填一下，点击右下角注册并下载。
 
-![davinci_website]()
+![davinci_website](https://cdn.jsdelivr.net/gh/Keanu-42/Keanu-42.github.io@v1.2/Gnome使用细节/davinci-resolve/davinci_website.png)
 
 压缩包下载好后，里面分别是安装指导PDF和安装程序，注意，安装程序是`.run`后缀。文件提取出来后不要急着点击安装，我们还需要把DaVinci所需的各种依赖包装上。当然，你也可以先安装，安装好后再检查所缺文件。安装界面和win差不多，一直next就完事[doge]。
 
-![安装界面]()
+![安装界面](https://cdn.jsdelivr.net/gh/Keanu-42/Keanu-42.github.io@v1.2/Gnome使用细节/davinci-resolve/安装界面.png)
+> 因为我已经安装过了，所以这里的选项是“重装”或“卸载”
 
 DaVinci安装好后，这时一般无法直接启动，因为还缺少依赖，所以接下来我们要检查到底缺哪些东西。
 
@@ -436,11 +437,11 @@ linux-vdso.so.1 (0x00007ffd23fce000)
 
 当我从终端启动optimus-manager时，结果又报错，看到提示我真的是“黑人问号？？”
 
-![optimus-manager]()
+![optimus-manager](https://cdn.jsdelivr.net/gh/Keanu-42/Keanu-42.github.io@v1.2/Gnome使用细节/davinci-resolve/optimus-manager.png)
 
 提示的第三行说道“If your login manager is GDM, make sure to follow those instructions”，我一看到这个GDM就知道事情不简单，下面提供的[解决方案](https://github.com/Askannz/optimus-manager#important--gnome-and-gdm-users)我点进去一看，GDM指的是“Gnome Display Manager”，然后下面给了两条解决措施，一是替换**gdm**为**gdm-prime**；二是optimus-manager与我的wayland窗口系统不兼容，还得修改`/etc/gdm/custom.conf`，把`#WaylandEnable=false`里的注释取消。
 
-![GDM]()
+![GDM](https://cdn.jsdelivr.net/gh/Keanu-42/Keanu-42.github.io@v1.2/Gnome使用细节/davinci-resolve/GDM.png)
 
 但是在这里我犹豫了，先不说这样做对系统的稳定性会不会产生影响，关键是我也不清楚我的方向是否正确。所以我先暂时放下这个，想去看看独显的运作情况。
 
