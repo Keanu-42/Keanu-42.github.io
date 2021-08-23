@@ -331,7 +331,7 @@ Audition
 Dreamweaver
 - BlueGriffon: http://bluegriffon.org/
 
-## <span id=a10>DaVinci-Resolve</span>
+## <span id=a11>DaVinci-Resolve</span>
 
 > 让DaVinci-Resolve在Manjaro中跑起来 (abandoned)
 
@@ -445,7 +445,7 @@ linux-vdso.so.1 (0x00007ffd23fce000)
 
 但是在这里我犹豫了，先不说这样做对系统的稳定性会不会产生影响，关键是我也不清楚我的方向是否正确。所以我先暂时放下这个，想去看看独显的运作情况。
 
-### [Linux查看GPU信息和使用情况](https://www.cnblogs.com/yuehouse/p/10242942.html)
+### <span id=a11-b1>[Linux查看GPU信息和使用情况](https://www.cnblogs.com/yuehouse/p/10242942.html)</span>
 
 1. 查看核显
 
