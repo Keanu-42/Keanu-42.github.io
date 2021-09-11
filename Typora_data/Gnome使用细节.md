@@ -17,6 +17,7 @@
 - [DaVinci-Resolve](#a11)
 	- [Linux查看GPU信息和使用情况](#a11-b1)
 - [PGP签名问题](#a12)
+	- [在安装密钥之前](#a12-b1)
 
 ----
 
@@ -640,6 +641,58 @@ linux-vdso.so.1 (0x00007ffd23fce000)
  > sudo pacman-key --populate archlinux
  > ```
  > > ———— @visone
+
+----
+
+### <span id = a12-b1>在安装密钥之前</span>
+
+- PGP签名损坏的原因比较多，其中一个可能容易遇到的是系统时间不同步，所以在这里我们要引入“ntp”，“systemd-timesyncd”这两个东西。
+
+- ntp，即网络时间协议（Network Time Protocol），是GNU/Linux系统通过Internet时间服务器同步系统软件时钟的最常见的方法。如果你已经安装了这个程序，那么就可以用这个命令同步时间。
+
+    ```
+    sudo ntpd -u ntp:ntp
+    ```
+
+- 实际上在大多数情况下，我们并不需要提供 NTP 服务，所以不需要安装ntp软件包，而是使用下一节的方法实现时间同步。
+
+- systemd-timesyncd，是一个用于跨网络同步系统时钟的守护服务，它实现了一个 SNTP 客户端，与 NTP 的复杂实现相比，这个服务简单的多，它只专注于从远程服务器查询然后同步到本地时钟。
+
+- 启用时间同步命令
+
+    ```
+    sudo timedatectl set-ntp true
+    ```
+
+- 检查时间同步状态
+
+    ```
+    timedatectl status
+    ```
+
+    ```
+    systemctl status systemd-timesyncd
+    ```
+
+----
+
+- 上面我们提到了通过重新安装密钥来解决PGP签名损坏的问题，其实这里建议放到最后一步，也就是在同步好系统时间并刷新镜像源之后。
+
+- 关于镜像的问题，我尝试了几种方法效果都不太好，最后还是在Manjaro的论坛里看到这篇帖子「[Pacman-mirrors-fasttrack ...](https://forum.manjaro.org/t/pacman-mirrors-fasttrack-adding-slow-or-invalid-entries-to-mirrorlist/75348)」，并找到了解决方法，就是下面这个命令。
+
+    ```
+    sudo pacman-mirrors --method -rank
+    ```
+
+- 这条命令在从arch的镜像源里拉取镜像时，给每一条地址做了测速，并按照高低顺序排好了位置。**注意**，刷新完后一定要强制更新一下系统和软件库。
+
+    ```
+    sudo pacman -Syyu
+    ```
+
+- 按照顺序做完这三步后，不出意外应该可以让系统重新“活过来了”。
+
+    > 折腾Linux真的是让人又爱又恨 233
 
 ----
 
