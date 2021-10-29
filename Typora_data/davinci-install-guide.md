@@ -1,4 +1,4 @@
-![resolve|690x314](upload://tKgL5kWzfxy9dbVPp928k7JTAVh.jpeg)
+![resolve|690x314](https://cdn.jsdelivr.net/gh/Keanu-42/Keanu-42.github.io@v1.5/Gnome使用细节/davinci-resolve/resolve.jpg)
 
 Installing DaVinci Resolve in Linux is not the easiest thing to do despite having native support. Resolve is a professional level video editor that requires a very specific environment to run properly. Below are the minimum requirements.
 
@@ -138,3 +138,8 @@ Hit ctrl-o to save out the file. Restart or logout of your desktop environment a
 For more information including detailed driver support and other helpful info the Arch wiki is a great place to be: https://wiki.archlinux.org/title/DaVinci_Resolve
 
 If you have any other suggestions, tip, tricks, or updates let us know down below!
+
+----
+
+> 本文转自TechHut社区「[How to install DaVinci Resolve in Linux](https://forum.techhut.tv/t/how-to-install-davinci-resolve-in-linux-ubuntu-arch-and-fedora/43)」
+>> 最近没写什么东西，小惭愧
