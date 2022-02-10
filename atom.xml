@@ -6,7 +6,7 @@
   <link href="http://www.keanu-42.cn/atom.xml" rel="self"/>
   
   <link href="http://www.keanu-42.cn/"/>
-  <updated>2021-12-10T16:15:15.437Z</updated>
+  <updated>2022-02-10T14:52:01.618Z</updated>
   <id>http://www.keanu-42.cn/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>尝试解决AUR下载和更新的问题</title>
+    <link href="http://www.keanu-42.cn/posts/53965/"/>
+    <id>http://www.keanu-42.cn/posts/53965/</id>
+    <published>2022-02-10T13:14:25.000Z</published>
+    <updated>2022-02-10T14:52:01.618Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;因为大陆这边对git的连接不是很好，所以我平时都是挂着代理下载和更新AUR，但并不是一直都有用，所以这次尝试从根本解决这个问题 : )&lt;/p&gt;
+&lt;p&gt;碰巧我在网上看到了这篇&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="日常" scheme="http://www.keanu-42.cn/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="待解决" scheme="http://www.keanu-42.cn/categories/%E6%97%A5%E5%B8%B8/%E5%BE%85%E8%A7%A3%E5%86%B3/"/>
+    
+    
+    <category term="AUR" scheme="http://www.keanu-42.cn/tags/AUR/"/>
+    
+    <category term="pamac" scheme="http://www.keanu-42.cn/tags/pamac/"/>
+    
+  </entry>
   
   <entry>
     <title>Windows Terminal的配置与美化</title>
