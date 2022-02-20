@@ -6,7 +6,7 @@
   <link href="http://www.keanu-42.cn/atom.xml" rel="self"/>
   
   <link href="http://www.keanu-42.cn/"/>
-  <updated>2022-02-18T04:07:55.565Z</updated>
+  <updated>2022-02-20T15:43:25.961Z</updated>
   <id>http://www.keanu-42.cn/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git签名、AUR网络和Linux下的独显驱动</title>
+    <link href="http://www.keanu-42.cn/posts/48580/"/>
+    <id>http://www.keanu-42.cn/posts/48580/</id>
+    <published>2022-02-20T15:37:17.000Z</published>
+    <updated>2022-02-20T15:43:25.961Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="日常" scheme="http://www.keanu-42.cn/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    <category term="已解决" scheme="http://www.keanu-42.cn/categories/%E6%97%A5%E5%B8%B8/%E5%B7%B2%E8%A7%A3%E5%86%B3/"/>
+    
+    
+    <category term="Linux" scheme="http://www.keanu-42.cn/tags/Linux/"/>
+    
+    <category term="AUR" scheme="http://www.keanu-42.cn/tags/AUR/"/>
+    
+    <category term="git" scheme="http://www.keanu-42.cn/tags/git/"/>
+    
+    <category term="NVIDIA" scheme="http://www.keanu-42.cn/tags/NVIDIA/"/>
+    
+  </entry>
   
   <entry>
     <title>终端复用程序——tmux</title>
