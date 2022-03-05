@@ -6,7 +6,7 @@
   <link href="http://www.keanu-42.cn/atom.xml" rel="self"/>
   
   <link href="http://www.keanu-42.cn/"/>
-  <updated>2022-03-04T10:21:18.239Z</updated>
+  <updated>2022-03-05T08:48:25.727Z</updated>
   <id>http://www.keanu-42.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.keanu-42.cn/posts/48580/"/>
     <id>http://www.keanu-42.cn/posts/48580/</id>
     <published>2022-02-20T15:37:17.000Z</published>
-    <updated>2022-03-04T10:21:18.239Z</updated>
+    <updated>2022-03-05T08:48:25.727Z</updated>
     
     
       
@@ -41,11 +41,11 @@
     
     <category term="Linux" scheme="http://www.keanu-42.cn/tags/Linux/"/>
     
-    <category term="AUR" scheme="http://www.keanu-42.cn/tags/AUR/"/>
-    
     <category term="git" scheme="http://www.keanu-42.cn/tags/git/"/>
     
     <category term="NVIDIA" scheme="http://www.keanu-42.cn/tags/NVIDIA/"/>
+    
+    <category term="AUR" scheme="http://www.keanu-42.cn/tags/AUR/"/>
     
   </entry>
   
@@ -250,9 +250,9 @@
     <category term="日常" scheme="http://www.keanu-42.cn/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="tips" scheme="http://www.keanu-42.cn/tags/tips/"/>
-    
     <category term="乱码" scheme="http://www.keanu-42.cn/tags/%E4%B9%B1%E7%A0%81/"/>
+    
+    <category term="tips" scheme="http://www.keanu-42.cn/tags/tips/"/>
     
   </entry>
   
@@ -307,9 +307,9 @@
     <category term="必看" scheme="http://www.keanu-42.cn/categories/%E5%BF%85%E7%9C%8B/"/>
     
     
-    <category term="提问的智慧" scheme="http://www.keanu-42.cn/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
-    
     <category term="tips" scheme="http://www.keanu-42.cn/tags/tips/"/>
+    
+    <category term="提问的智慧" scheme="http://www.keanu-42.cn/tags/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7/"/>
     
   </entry>
   
