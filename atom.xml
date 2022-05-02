@@ -6,7 +6,7 @@
   <link href="http://www.keanu-42.cn/atom.xml" rel="self"/>
   
   <link href="http://www.keanu-42.cn/"/>
-  <updated>2022-03-07T07:21:35.860Z</updated>
+  <updated>2022-05-02T14:01:29.455Z</updated>
   <id>http://www.keanu-42.cn/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Arch小记</title>
+    <link href="http://www.keanu-42.cn/posts/37632/"/>
+    <id>http://www.keanu-42.cn/posts/37632/</id>
+    <published>2022-05-02T13:52:37.000Z</published>
+    <updated>2022-05-02T14:01:29.455Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;&lt;center&gt;引言&lt;/center&gt;&lt;/h2&gt;&lt;p&gt;有一段时间没有写东西，最近我在折腾Arch并尝试使用 &lt;em&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="日常" scheme="http://www.keanu-42.cn/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="Linux" scheme="http://www.keanu-42.cn/tags/Linux/"/>
+    
+    <category term="Arch" scheme="http://www.keanu-42.cn/tags/Arch/"/>
+    
+    <category term="Xmonad" scheme="http://www.keanu-42.cn/tags/Xmonad/"/>
+    
+  </entry>
   
   <entry>
     <title>git签名、AUR网络和Linux下的独显驱动</title>
