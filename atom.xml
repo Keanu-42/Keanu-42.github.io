@@ -6,7 +6,7 @@
   <link href="http://www.keanu-42.cn/atom.xml" rel="self"/>
   
   <link href="http://www.keanu-42.cn/"/>
-  <updated>2022-05-04T06:42:03.564Z</updated>
+  <updated>2022-05-05T09:46:25.703Z</updated>
   <id>http://www.keanu-42.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux文本编辑器</title>
+    <link href="http://www.keanu-42.cn/posts/33734/"/>
+    <id>http://www.keanu-42.cn/posts/33734/</id>
+    <published>2022-05-05T07:49:03.000Z</published>
+    <updated>2022-05-05T09:46:25.703Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;&lt;center&gt;引言&lt;/center&gt;&lt;/h2&gt;&lt;p&gt;如果你问我在Linux上最常用、最喜欢的编辑器是什么，那我肯定回答是 &lt;em&gt;“&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="杂谈" scheme="http://www.keanu-42.cn/categories/%E6%9D%82%E8%B0%88/"/>
+    
+    
+    <category term="vim" scheme="http://www.keanu-42.cn/tags/vim/"/>
+    
+    <category term="spacevim" scheme="http://www.keanu-42.cn/tags/spacevim/"/>
+    
+  </entry>
   
   <entry>
     <title>Arch小记</title>
